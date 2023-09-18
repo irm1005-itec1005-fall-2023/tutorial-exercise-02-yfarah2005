@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tutorial 02 - Solution</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- CSS -->
+    <!-- The following CSS has been added so that the page
+    doesn't look super awful -->
+    <!-- Ignore everything in the <style> tag for now -->
+    <!-- We will learn about CSS later in the course -->
+    <!-- Scroll down for instructions on how to complete the tutorial -->
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2rem;
+        line-height: 1.6;
+      }
+      img {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- INSTRUCTIONS -->
+    <!-- TO DO: Add markup to the following content so that it has the proper content structure -->
+    <!-- You will need to use the following tags: h1, h2, h3, p, ul, li, a, section, nav, header, footer, main, input, label, fieldset, select, form, table, thead, tobody, tfoot, tr, td, img  -->
+    <!-- The correct element appears ABOVE the text -->
+    <!-- You may remove the extra comments when you finish, but you don't need to -->
+
+    <header>
+      <h2>Site Header</h2>
+
+      <p>Site title: City of Ottawa Random Data</p>
+
+      <img
+        src="./images/house.png"
+        alt="Illustrated graphic of a condo tower"
+      />
+
+      <nav>
+        <h3>Site Menu</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Random City of Ottawa Things</h1>
+
+      <section>
+        <h2>Table of contents</h2>
+
+        <ul>
+          <li>
+            <a href="#summary">Housing Construction Summary for Q1 2023</a>
+          </li>
+          <li><a href="#wards">Wards</a></li>
+          <li><a href="#taxes">Property Taxes</a></li>
+          <li><a href="#form">Ward Councillor Evaluation Form</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="summary">Housing Construction Summary for Q1 2023</h2>
+
+        <p>In Q1 2023, there were:</p>
+
+        <ul>
+          <li>
+            2,716 dwellings granted land use permissions through Official Plan
+            or Zoning By-law Amendments
+            <ul>
+              <li>10 of which were not-for-profit dwellings</li>
+            </ul>
+          </li>
+          <li>
+            4,621 dwellings approved through Plan of Subdivision, Plan of
+            Condominium, Site Plan Control, Minor Variance, and Severance
+            applications
+          </li>
+          <li>3,187 net dwellings issued building permits</li>
+          <li>1,626 housing starts</li>
+          <li>
+            14,945 dwellings under construction
+            <ul>
+              <li>579 of which are not-for-profit dwellings</li>
+            </ul>
+          </li>
+          <li>2,135 dwellings where construction was completed</li>
+        </ul>
+
+        <!-- Data Source: https://pub-ottawa.escribemeetings.com/filestream.ashx?DocumentId=139208 -->
+      </section>
+
+      <section>
+        <h2 id="wards">Wards</h2>
+
+        <p>
+          The City of Ottawa is divided into 24 wards. Each ward has a
+          councillor who represents the residents of that ward.
+        </p>
+
+        <!-- Original Source: https://documents.ottawa.ca/sites/documents/files/Map_City_Carte_Ville_2022_BIL.pdf-->
+        <img
+          src="./images/ottawa-map.png"
+          alt="Map of Ottawa with ward boundaries highlighted"
+        />
+      </section>
+
+      <section>
+        <h2 id="taxes">Property Taxes</h2>
+
+        <p>
+          The City of Ottawa collects property taxes from residents to help pay
+          for services such as roads, parks, and public transit.
+        </p>
+
+        <section>
+          <h3>Probing questions</h3>
+
+          <p>
+            Reviewing the data in the following table, answer the following
+            questions:
+          </p>
+
+          <ul>
+            <li>Which ward has the highest property tax revenue?</li>
+            <li>Which ward has the lowest property tax revenue?</li>
+            <li>
+              What is the total property tax revenue for the City of Ottawa?
+            </li>
+            <li>
+              What is the difference in size between the ward that collects the
+              most property taxes and the ward that collects the least?
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Ward specific data</h3>
+
+          <!-- Table of values for prop tax data -->
+          <table>
+            <thead>
+              <tr>
+                <th>Ward</th>
+                <th>Ward Name</th>
+                <th>Municipal Taxes</th>
+                <th>Percent of Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>ORLÉANS EAST-CUMBERLAND</td>
+                <td>76,175,204</td>
+                <td>3.75%</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>ORLÉANS WEST-INNES</td>
+                <td>66,504,224</td>
+                <td>3.27%</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>BARRHAVEN WEST</td>
+                <td>89,847,966</td>
+                <td>4.42%</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>KANATA NORTH</td>
+                <td>100,674,860</td>
+                <td>4.96%</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>WEST CARLETON-MARCH</td>
+                <td>41,848,481</td>
+                <td>2.06%</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>STITTSVILLE</td>
+                <td>86,734,417</td>
+                <td>4.27%</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>BAY</td>
+                <td>90,814,792</td>
+                <td>4.47%</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>COLLEGE</td>
+                <td>92,745,516</td>
+                <td>4.57%</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>KNOXDALE-MERIVALE</td>
+                <td>83,979,020</td>
+                <td>4.13%</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>GLOUCESTER-SOUTHGATE</td>
+                <td>81,538,410</td>
+                <td>4.01%</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>BEACON HILL-CYRVILLE</td>
+                <td>68,023,631</td>
+                <td>3.35%</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>RIDEAU-VANIER</td>
+                <td>111,861,953</td>
+                <td>5.51%</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>RIDEAU-ROCKCLIFFE</td>
+                <td>82,026,391</td>
+                <td>4.04%</td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>SOMERSET</td>
+                <td>198,629,780</td>
+                <td>9.78%</td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>KITCHISSIPPI</td>
+                <td>98,468,851</td>
+                <td>4.85%</td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>RIVER</td>
+                <td>77,794,332</td>
+                <td>3.83%</td>
+              </tr>
+              <tr>
+                <td>17</td>
+                <td>CAPITAL</td>
+                <td>94,693,764</td>
+                <td>4.66%</td>
+              </tr>
+              <tr>
+                <td>18</td>
+                <td>ALTA VISTA</td>
+                <td>93,484,569</td>
+                <td>4.60%</td>
+              </tr>
+              <tr>
+                <td>19</td>
+                <td>ORLÉANS SOUTH-NAVAN</td>
+                <td>84,471,284</td>
+                <td>4.16%</td>
+              </tr>
+              <tr>
+                <td>20</td>
+                <td>OSGOODE</td>
+                <td>50,198,912</td>
+                <td>2.47%</td>
+              </tr>
+              <tr>
+                <td>21</td>
+                <td>RIDEAU-JOCK</td>
+                <td>50,347,696</td>
+                <td>2.48%</td>
+              </tr>
+              <tr>
+                <td>22</td>
+                <td>RIVERSIDE SOUTH-FINDLAY CREEK</td>
+                <td>64,086,253</td>
+                <td>3.16%</td>
+              </tr>
+              <tr>
+                <td>23</td>
+                <td>KANATA SOUTH</td>
+                <td>77,107,277</td>
+                <td>3.80%</td>
+              </tr>
+              <tr>
+                <td>24</td>
+                <td>BARRHAVEN EAST</td>
+                <td>68,916,398</td>
+                <td>3.39%</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>Total</td>
+                <td>CITYWIDE</td>
+                <td>2,030,973,981</td>
+                <td>100%</td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
+      </section>
+
+      <section>
+        <h2 id="form">Ward Councillor Evaluation Form</h2>
+
+        <p>
+          Rents too high? Not enough housing options in your neighbourhood.
+          <abbr>OCTranspo</abbr> buses constantly late or not arriving at all.
+          OTrain shut down again? Do you have to ride your bike on a sidewalk
+          because the roads you use aren't comfortable and don't have a
+          protected bike lane?
+        </p>
+
+        <p>
+          These are all examples of areas of responsibilities that fall to the
+          city and to the mayor and local councillors. Let your councillor know
+          what you think about the job they are doing. Fill out the form below
+          to provide your feedback.
+        </p>
+
+        <!-- Form -->
+
+        <form>
+          <fieldset>
+            <legend>Personal Information:</legend>
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              autocomplete="name"
+              required
+            />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" autocomplete="email" />
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" />
+
+            <label for="ward">Ward:</label>
+            <select id="ward" name="ward" required>
+              <option value="">--Please choose an option--</option>
+              <option value="ward1">Ward 1</option>
+              <option value="ward2">Ward 2</option>
+              <option value="ward3">Ward 3</option>
+              <option value="ward4">Ward 4</option>
+              <option value="ward5">Ward 5</option>
+              <option value="ward6">Ward 6</option>
+              <option value="ward7">Ward 7</option>
+              <option value="ward8">Ward 8</option>
+              <option value="ward9">Ward 9</option>
+              <option value="ward10">Ward 10</option>
+              <option value="ward11">Ward 11</option>
+              <option value="ward12">Ward 21</option>
+              <option value="ward13">Ward 13</option>
+              <option value="ward14">Ward 14</option>
+              <option value="ward15">Ward 15</option>
+              <option value="ward16">Ward 16</option>
+              <option value="ward17">Ward 17</option>
+              <option value="ward18">Ward 18</option>
+              <option value="ward19">Ward 19</option>
+              <option value="ward20">Ward 20</option>
+              <option value="ward21">Ward 21</option>
+              <option value="ward22">Ward 22</option>
+              <option value="ward23">Ward 23</option>
+              <option value="ward24">Ward 24</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>Feedback:</legend>
+
+            <label for="topic">Subject/Topic:</label>
+            <input type="text" id="topic" name="topic" required />
+
+            <label>Feedback Type:</label>
+            <input
+              type="radio"
+              id="suggestion"
+              name="feedback_type"
+              value="suggestion"
+              required
+            />
+            <label for="suggestion">Suggestion</label>
+            <input
+              type="radio"
+              id="concern"
+              name="feedback_type"
+              value="concern"
+            />
+            <label for="concern">Concern</label>
+            <input
+              type="radio"
+              id="appreciation"
+              name="feedback_type"
+              value="appreciation"
+            />
+            <label for="appreciation">Appreciation</label>
+
+            <label for="feedback">Feedback Details:</label><br />
+            <textarea
+              id="feedback"
+              name="feedback"
+              rows="4"
+              cols="50"
+              required
+            ></textarea>
+
+            <label for="priority">Priority Level:</label>
+            <select id="priority" name="priority">
+              <option value="low">Low</option>
+              <option value="medium">Medium</option>
+              <option value="high">High</option>
+            </select>
+
+            <label for="location">Location (if applicable):</label>
+            <input type="text" id="location" name="location" />
+          </fieldset>
+
+          <fieldset>
+            <legend>Follow-up Information:</legend>
+
+            <input type="checkbox" id="followup" name="followup" value="yes" />
+            <label for="followup"
+              >I would like to receive a follow-up response.</label
+            >
+
+            <label for="contact_method">Preferred Contact Method:</label>
+            <select id="contact_method" name="contact_method">
+              <option value="email">Email</option>
+              <option value="phone">Phone</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>Submit Feedback:</legend>
+
+            <input type="checkbox" id="consent" name="consent" required />
+            <label for="consent">I consent to the use of my feedback.</label>
+
+            <input type="submit" value="Submit Feedback" />
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <h2>Site Footer</h2>
+
+      <nav>
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <p>&copy; 2023</p>
+    </footer>
+  </body>
+</html>
